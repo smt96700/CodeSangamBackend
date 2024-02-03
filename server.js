@@ -95,7 +95,7 @@ app.use(passport.session())
 
 app.use(cors(
   {
-    origin : "https://expense-buddy-ten.vercel.app/",
+    origin : "https://expense-buddy-ten.vercel.app",
     methods: "GET, POST, OPTIONS, PUT, DELETE",
     credentials: true,
   }
@@ -122,7 +122,7 @@ mongoose
     // create Socket.IO instance
     const io = new Server(server, {
       cors: {
-        origin: "https://expense-buddy-ten.vercel.app/",
+        origin: "https://expense-buddy-ten.vercel.app",
         methods: ["GET", "POST", "PUT"],
         credentials: true,
       },

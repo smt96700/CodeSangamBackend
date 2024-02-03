@@ -20,7 +20,7 @@ passport.use(
     new GoogleStrategy({
         //options for google strategy..
   
-        callbackURL : '/api/user/auth/google/redirect',
+        callbackURL : 'https://expensebuddybackend.onrender.com/api/user/auth/google/redirect',
         clientID : process.env.CLIENTID,
         clientSecret : process.env.CLIENTSECRET  
 
