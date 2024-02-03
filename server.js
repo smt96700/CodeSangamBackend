@@ -122,7 +122,7 @@ mongoose
     // create Socket.IO instance
     const io = new Server(server, {
       cors: {
-        origin: "http://localhost:5173",
+        origin: "https://expense-buddy-ten.vercel.app/",
         methods: ["GET", "POST", "PUT"],
         credentials: true,
       },
