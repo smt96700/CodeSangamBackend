@@ -22,7 +22,7 @@ router.get('/auth/google', passport.authenticate('google', {
 
 router.get('/auth/google/redirect', passport.authenticate('google', {
         
-        successRedirect : "http://localhost:5173/wait",
+        successRedirect : "https://expense-buddy-ten.vercel.app/wait",
         failureRedirect : "/fail",
 }), async (req, res) => {
         console.log("req.user")
@@ -32,7 +32,7 @@ router.get('/auth/google/redirect', passport.authenticate('google', {
 )  
 
 router.get('/fail', async (req, res) => { 
-        res.redirect('http://localhost:5173/login');
+        res.redirect('https://expense-buddy-ten.vercel.app/login');
 })
 
 router.get('/wait', googleAuthRedirect)
