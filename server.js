@@ -77,7 +77,7 @@ const app = express();
 app.use(express.json());
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  // res.header('Access-Control-Allow-Origin', '*');
   console.log(req.path, req.method);
   console.log("HG")
   next();
