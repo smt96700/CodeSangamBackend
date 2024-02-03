@@ -95,7 +95,7 @@ app.use(passport.session())
 
 app.use(cors(
   {
-    origin : "http://localhost:5173",
+    origin : "https://expense-buddy-ten.vercel.app/",
     methods: "GET, POST, OPTIONS, PUT, DELETE",
     credentials: true,
   }
